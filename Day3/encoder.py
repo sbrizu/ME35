@@ -1,5 +1,6 @@
 from machine import Pin
 from machine import PWM
+import utime, time
 
 
 class Count(object):
@@ -42,11 +43,4 @@ class Motor(Count):
             self.M1.duty_u16(0)
             self.M2.duty_u16(int(speed*65535/100)) 
      
-
-count = Count(32,39)
-print(count.value())
-
-#setting up motor with encoder
-#Motor1 = Motor(14,27, 32,39)
-#Motor1.pos() # to read the encoder value for Motor 1
 
