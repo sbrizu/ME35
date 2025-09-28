@@ -1,1 +1,2 @@
-message = b'{"name":"","hobby":"","pref":"","python":""}'
+message = b'{"name":"Sol","hobby":"Playing the guitar","pref":"builder","python":"intermediate"}'
+
