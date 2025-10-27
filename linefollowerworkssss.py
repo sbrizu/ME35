@@ -41,16 +41,16 @@ def read_W_once():
 
 # ---------------- Calibration ----------------
 def calibrate_white_black(samples=20, delay_ms=80):
-    print("\nPlace sensor over WHITE. Sampling in 1.5s…")
-    time.sleep_ms(1500)
+    print("\nPlace sensor over WHITE. Sampling in 2s…")
+    time.sleep_ms(2000)
     s=0
     for _ in range(samples):
         s += read_W_once(); time.sleep_ms(delay_ms)
     W_white = s / samples
     print("W_white ≈", int(W_white))
 
-    print("\nNow place sensor over BLACK (tape). Sampling in 1.5s…")
-    time.sleep_ms(1500)
+    print("\nNow place sensor over BLACK (tape). Sampling in 2s…")
+    time.sleep_ms(2000)
     s=0
     for _ in range(samples):
         s += read_W_once(); time.sleep_ms(delay_ms)
